@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/landing_page"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/linearLayout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="40dp"
+            android:background="@drawable/upper_text_field"
+            android:ems="10"
+            android:id="@+id/emailET"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/email"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColorHint="#cecece" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#adadad"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:ems="10"
+            android:hint="@string/password"
+            android:id="@+id/passwordET"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColorHint="#cecece" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#adadad" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPhonetic"
+            android:layout_height="40dp"
+            android:background="@drawable/lower_text_field"
+            android:ems="10"
+            android:id="@+id/phoneET"
+            android:layout_gravity="center_horizontal"
+            android:hint="phone"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColorHint="#cecece" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fec107"
+            android:text="@string/sign_up"
+            android:id="@+id/signupBT"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="\nor\n"
+            android:id="@+id/or"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:paddingLeft="8dp"
+            android:text="@string/sgin_up_FB"
+            android:drawableLeft="@drawable/fb_small"
+            android:id="@+id/facebookBT"
+            android:layout_gravity="center_horizontal"
+            android:background="#39589b" />
+    </LinearLayout>
+</RelativeLayout>

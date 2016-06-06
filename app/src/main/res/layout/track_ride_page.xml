@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="you will reach (your destination), in xx.x min "
+        android:id="@+id/statusbarTV_trackride"
+        android:background="#333"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_marginLeft="@dimen/login_page_leftRight_margin"
+        android:layout_margin="@dimen/login_page_leftRight_margin"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/nav"
+        android:layout_marginLeft="160dp"/>
+
+</LinearLayout>

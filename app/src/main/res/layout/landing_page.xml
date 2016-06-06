@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/landing_page"
+    android:id="@+id/frame_layout">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/landing_page">
+
+
+
+        <ImageView
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:id="@+id/image_logo"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="370dp"
+            android:gravity="center|bottom"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="@dimen/button_signin_width"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#323333"
+                android:layout_marginRight="10dp"
+                android:paddingRight="@dimen/sginin_text_padding"
+                android:id="@+id/sginInBT"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_width="@dimen/button_signin_width"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="@dimen/sginin_text_padding"
+                android:background="#fec107"
+                android:id="@+id/registerBT"
+                android:textColor="#323333" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+

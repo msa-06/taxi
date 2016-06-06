@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="330dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        app:border_color="#FF000000"
+        android:src="@drawable/driver"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" >
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hassan"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="30dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dirver_rating"
+        android:rating="3.5"
+        android:layout_gravity="center_horizontal"
+        android:progressTint="#fec107"
+        android:progressBackgroundTint="#bebebe"
+        android:stepSize=".5"
+        android:numStars="5"
+        style="@style/RatingBar"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:text="Silver Suzan"
+        android:layout_marginRight="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HH 1121 123 \n"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#707070"
+        android:layout_marginRight="55dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="     Call driver"
+        android:id="@+id/button"
+        android:background="#333"
+        android:textColor="#d6d6d6"
+        android:drawableLeft="@drawable/phone"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:paddingLeft="100dp"
+        android:textSize="21dp" />
+</LinearLayout>
